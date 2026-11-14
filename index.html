@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111210">
+  <meta name="description" content="LUXURY ESTATE — агентство элитной недвижимости. Исключительные резиденции, виллы и пентхаусы.">
+  <title>LUXURY ESTATE — Недвижимость исключительного уровня</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="preloader" aria-hidden="true"><span>LE</span><i></i></div>
+  <header class="header" id="top">
+    <a class="brand" href="#top" aria-label="Luxury Estate — главная"><span class="brand-mark">L<span>E</span></span><span class="brand-name">LUXURY<br><b>ESTATE</b></span></a>
+    <nav class="nav" id="nav">
+      <a href="#catalog">Объекты</a><a href="#about">О компании</a><a href="#services">Услуги</a><a href="#contact">Контакты</a>
+    </nav>
+    <a class="header-phone" href="tel:+74951234567">+7 495 123-45-67</a>
+    <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image"></div><div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span></span> ЭСТЕТИКА ИСКЛЮЧИТЕЛЬНОГО</p>
+        <h1>Пространство<br>вашего <em>статуса.</em></h1>
+        <p class="hero-copy">Коллекция выдающихся резиденций для тех,<br class="desktop"> кто выбирает больше, чем просто недвижимость.</p>
+        <div class="hero-actions"><a class="btn btn-gold" href="#catalog">Смотреть объекты <span>↗</span></a><a class="text-link" href="#about">Открыть мир Luxury Estate <span>↓</span></a></div>
+      </div>
+      <div class="hero-bottom"><span>01 / 04</span><span>МОСКВА · ДУБАЙ · ЛАЗУРНЫЙ БЕРЕГ</span><span>SCROLL TO DISCOVER ↓</span></div>
+    </section>
+
+    <section class="intro section-pad" id="about">
+      <div class="section-kicker reveal">01 / ФИЛОСОФИЯ</div>
+      <div class="intro-grid">
+        <h2 class="reveal">Недвижимость<br>как <em>искусство</em><br>жить.</h2>
+        <div class="intro-text reveal"><p class="lead">Мы находим места, которые становятся частью вашей истории.</p><p>От архитектурных шедевров в центре города до уединённых вилл у моря — каждый объект в нашей коллекции выбран за характер, безупречную эстетику и исключительное качество.</p><a class="under-link" href="#services">Больше о нашем подходе <span>↗</span></a></div>
+      </div>
+      <div class="stats reveal"><div><strong>12<span>+</span></strong><small>ЛЕТ НА РЫНКЕ</small></div><div><strong>480</strong><small>ЗАКРЫТЫХ СДЕЛОК</small></div><div><strong>18</strong><small>СТРАН ПРИСУТСТВИЯ</small></div><div><strong>24/7</strong><small>ЛИЧНЫЙ СЕРВИС</small></div></div>
+    </section>
+
+    <section class="catalog section-pad" id="catalog">
+      <div class="section-head reveal"><div><div class="section-kicker">02 / ИЗБРАННАЯ КОЛЛЕКЦИЯ</div><h2>Объекты <em>недвижимости</em></h2></div><a class="under-link desktop" href="#contact">Запросить подбор <span>↗</span></a></div>
+      <div class="filters reveal" role="group" aria-label="Фильтр объектов"><button class="filter active" data-filter="all">Все объекты <span>06</span></button><button class="filter" data-filter="villa">Виллы</button><button class="filter" data-filter="penthouse">Пентхаусы</button><button class="filter" data-filter="apartment">Апартаменты</button></div>
+      <div class="property-grid">
+        <article class="property-card reveal" data-type="villa"><a href="#contact" class="property-image"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1400&q=85" alt="Современная вилла с бассейном"><span class="tag">ЭКСКЛЮЗИВ</span><span class="image-arrow">↗</span></a><div class="property-info"><div><span class="location">РАЙОН ПАЛМ-ДЖУМЕЙРА · ДУБАЙ</span><h3>Villa Azure</h3></div><strong>€ 4 850 000</strong></div><div class="property-meta"><span>⌂ 620 м²</span><span>4 спальни</span><span>Бассейн</span></div></article>
+        <article class="property-card reveal" data-type="penthouse"><a href="#contact" class="property-image"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85" alt="Светлая дизайнерская резиденция"><span class="tag">НОВЫЙ ОБЪЕКТ</span><span class="image-arrow">↗</span></a><div class="property-info"><div><span class="location">ЦЕНТР · МОСКВА</span><h3>The Grand Penthouse</h3></div><strong>€ 2 300 000</strong></div><div class="property-meta"><span>⌂ 310 м²</span><span>3 спальни</span><span>Терраса</span></div></article>
+        <article class="property-card reveal" data-type="apartment"><a href="#contact" class="property-image"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=85" alt="Элегантная гостиная апартаментов"><span class="tag">ВИД НА ПАРК</span><span class="image-arrow">↗</span></a><div class="property-info"><div><span class="location">ЗОЛОТАЯ МИЛЯ · МОСКВА</span><h3>Residence No. 8</h3></div><strong>€ 1 150 000</strong></div><div class="property-meta"><span>⌂ 185 м²</span><span>2 спальни</span><span>Камин</span></div></article>
+        <article class="property-card reveal" data-type="villa"><a href="#contact" class="property-image"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85" alt="Минималистичная вилла среди зелени"><span class="tag">ЧАСТНАЯ ПРОДАЖА</span><span class="image-arrow">↗</span></a><div class="property-info"><div><span class="location">КОТ-Д’АЗЮР · ФРАНЦИЯ</span><h3>Maison de Lumière</h3></div><strong>€ 6 700 000</strong></div><div class="property-meta"><span>⌂ 540 м²</span><span>5 спален</span><span>Сад</span></div></article>
+        <article class="property-card reveal" data-type="penthouse"><a href="#contact" class="property-image"><img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1400&q=85" alt="Пентхаус с панорамными окнами"><span class="tag">ПАНОРАМНЫЙ ВИД</span><span class="image-arrow">↗</span></a><div class="property-info"><div><span class="location">ДЕЛЬФИНА · ЛОНДОН</span><h3>Skyline Residence</h3></div><strong>€ 3 950 000</strong></div><div class="property-meta"><span>⌂ 260 м²</span><span>3 спальни</span><span>Панорама</span></div></article>
+        <article class="property-card reveal" data-type="apartment"><a href="#contact" class="property-image"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=85" alt="Современные апартаменты в тёплых тонах"><span class="tag">ГОТОВ К ПОКАЗУ</span><span class="image-arrow">↗</span></a><div class="property-info"><div><span class="location">ПОРТ · МОНАКО</span><h3>Porto Vista</h3></div><strong>€ 1 890 000</strong></div><div class="property-meta"><span>⌂ 142 м²</span><span>2 спальни</span><span>Вид на море</span></div></article>
+      </div>
+      <p class="disclaimer">Представленные объекты — демонстрационная подборка. Актуальность, характеристики и цены уточняются у консультанта.</p>
+    </section>
+
+    <section class="statement">
+      <div class="statement-bg"></div><div class="statement-content reveal"><div class="section-kicker">03 / LUXURY ESTATE</div><h2>Не просто адрес.<br><em>Ваш новый уровень.</em></h2><a class="btn btn-outline" href="#contact">Найти свою резиденцию <span>↗</span></a></div>
+    </section>
+
+    <section class="services section-pad" id="services">
+      <div class="section-head reveal"><div><div class="section-kicker">04 / НАШИ ВОЗМОЖНОСТИ</div><h2>Сервис без <em>компромиссов</em></h2></div></div>
+      <div class="service-list">
+        <div class="service reveal"><span>01</span><h3>Персональный подбор</h3><p>Доступ к частной коллекции и объектам вне открытого рынка.</p><b>↗</b></div>
+        <div class="service reveal"><span>02</span><h3>Сопровождение сделки</h3><p>Координация процесса, проверка документов и внимание к деталям.</p><b>↗</b></div>
+        <div class="service reveal"><span>03</span><h3>Управление резиденцией</h3><p>Забота о вашей недвижимости и сервис на расстоянии одного звонка.</p><b>↗</b></div>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contact">
+      <div class="contact-copy reveal"><div class="section-kicker">05 / ЛИЧНАЯ КОНСУЛЬТАЦИЯ</div><h2>Ваш следующий<br>адрес начинается<br><em>здесь.</em></h2><p>Расскажите о своих пожеланиях — наш консультант подготовит персональную подборку.</p><div class="contact-details"><span>ТЕЛЕФОН</span><a href="tel:+74951234567">+7 495 123-45-67</a><span>EMAIL</span><a href="mailto:hello@luxuryestate.example">hello@luxuryestate.example</a></div></div>
+      <form class="contact-form reveal" id="leadForm"><label>ВАШЕ ИМЯ<input required name="name" placeholder="Как к вам обращаться?"></label><label>ТЕЛЕФОН ИЛИ EMAIL<input required name="contact" placeholder="+7 ___ ___-__-__"></label><label>ЧТО ВАС ИНТЕРЕСУЕТ<select name="interest"><option>Подбор недвижимости</option><option>Продажа объекта</option><option>Управление недвижимостью</option><option>Другое</option></select></label><button class="btn btn-gold" type="submit">Отправить запрос <span>↗</span></button><small>Нажимая кнопку, вы соглашаетесь на обработку данных. Подключите реальную CRM и политику конфиденциальности перед публикацией.</small><p class="form-message" aria-live="polite"></p></form>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#top"><span class="brand-mark">L<span>E</span></span><span class="brand-name">LUXURY<br><b>ESTATE</b></span></a><span>© 2026 LUXURY ESTATE. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</span><a href="#top">НАВЕРХ ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>

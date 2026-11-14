@@ -1,0 +1,11 @@
+const preloader=document.querySelector('.preloader');
+window.addEventListener('load',()=>setTimeout(()=>preloader.classList.add('done'),350));
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const filters=document.querySelectorAll('.filter');
+const cards=document.querySelectorAll('.property-card');
+filters.forEach(btn=>btn.addEventListener('click',()=>{filters.forEach(f=>f.classList.remove('active'));btn.classList.add('active');const type=btn.dataset.filter;cards.forEach(card=>card.classList.toggle('hidden',type!=='all'&&card.dataset.type!==type))}));
+const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('.nav');
+toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open))});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false')}));
+document.getElementById('leadForm').addEventListener('submit',e=>{e.preventDefault();document.querySelector('.form-message').textContent='Спасибо! Форма работает в демонстрационном режиме. Для получения заявок подключите CRM или серверную отправку.';e.target.reset()});
